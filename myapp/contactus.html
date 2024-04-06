@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo"><img src="img/logo.png"></h1>
+        <ul class="nav-links">
+            <li ><a href="RYHNO.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#" onclick="toggleMenu()">Products</a></li>
+            <li class="active"><a href="contactus.html">Contact us</a></li>
+            <li><a href="" class="ctn">PreBook Now</a></li>
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <a href="se03lite.html" class="sub-menu-link">
+                        <p>SE03 Lite</p>
+                        <hr>
+                        <span></span>
+                    </a>
+                    <a href="se03.html" class="sub-menu-link">
+                        <p>SE03 </p><hr>
+                        <span></span>
+                    </a>
+                    <a href="se03max.html" class="sub-menu-link">
+                        <p>SE03 Max</p><hr>
+                        <span></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <p>Compare all</p><hr>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </ul>
+        <img src="img/menu.svg" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1>Contact us</h1>
+            <h2>Mail: <a href="#">info@rhyno.in</a><br>
+                ● Mobile no.: +91-9023987528<br>
+                ● Location: Rhyno Wheels Private limited, Near UG hostel gate #2, Behind PDEU,
+                Raisan, Gandhinagar, Gujarat, India.
+                </h2>
+        </div>
+    </header>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{navlinks.classList.toggle('mobile-menu')
+    })
+    </script>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>
