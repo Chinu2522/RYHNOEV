@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <title>SE03</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo"><img src="img/logo.png"></h1>
+        <ul class="nav-links">
+            <li ><a href="RYHNO.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li class="active"><a href="#" onclick="toggleMenu()">Products</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            <li><a href="#" class="ctn">PreBook Now</a></li>
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <a href="se03lite.html" class="sub-menu-link">
+                        <p>SE03 Lite</p>
+                        <hr>
+                        <span></span>
+                    </a>
+                    <a href="se03.html" class="sub-menu-link">
+                        <p>SE03 </p><hr>
+                        <span></span>
+                    </a>
+                    <a href="se03max.html" class="sub-menu-link">
+                        <p>SE03 Max</p><hr>
+                        <span></span>
+                    </a>
+                    <a href="compare.html" class="sub-menu-link">
+                        <p>Compare all</p><hr>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </ul>
+        <img src="img/menu.svg" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content1">
+            
+                <div class="row1">
+                    <div class="lcol">
+                        <div class="img-card">
+                           <img src="img/SE03.png" alt=""> 
+                           
+                        </div>
+                    </div>
+                    <div class="rcol">
+                        <h2 class="prop">SE03</h2>
+                        <div class="description">
+                            <p>Indulge in the perfect harmony of power and range with this Rhyno. Offering an exhilarating experience with its robust 2000W motor, it ensures a thrilling ride while still delivering an impressive 80-100km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 2000W motor and a 2.7kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn.</p>
+                              Other specification are given bellow!!!</p>
+                              <div class="line"></div>
+                            <p>Battery:2.7Kwh<br>
+                                Battery features:LFP with 1500 cycles, Active Balancing, Waterproof (IP67)<br>
+                                Battery warranty:3 years<br>
+                                Charging time: 4 hours (12A)<br>
+                                Motor:1500W<br>
+                                Max speed: 55km/h<br>
+                                Warranty on electronics: 1 year<br>
+                                Max range (@30km/h):120 km<br>
+                                Max range (@45km/h): 100 km<br>
+                                Max range (@full speed):80 km<br>
+                                Other key benefits:Fire=safe Battery,
+                                                    Range prediction,
+                                                    Comfortable ride,
+                                                    Stable and safe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{navlinks.classList.toggle('mobile-menu')
+    })
+    </script>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
